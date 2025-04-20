@@ -1,0 +1,53 @@
+/* roboto */
+@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 75% 100%;
+	font-stretch: 100%;
+	src: local("Roboto Regular"), local("Roboto-Regular"), url('./fonts/roboto.woff2') format("woff2");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: white;
+  color: #242424;
+}
+
+nav {
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100%;
+  height: 50px;
+}
+
+nav ul {
+  padding: 25px;
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: steelblue;
+}
+
+nav ul li a {
+  color: #e3e3e3;
+  text-decoration: none;
+}
+
+a.active {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}

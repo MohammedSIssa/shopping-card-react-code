@@ -1,0 +1,23 @@
+.home-page {
+  padding: 100px 200px;
+}
+
+.home-page h1 {
+  font-size: 128px;
+}
+
+.home-page button {
+  background-color: #242424;
+  border: 0;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page button a {
+  color: #e3e3e3;
+  text-decoration: none;
+  font-size: 28px;
+  text-transform: capitalize;
+}
