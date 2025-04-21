@@ -24,8 +24,8 @@ function Shop({ onAddToCart, data, setData, cart }) {
     }
   }, [data, setData]);
 
-  if (isLoading && !data) return <div>Loading..</div>;
-  if (error) return <div>An Error was encoutered</div>;
+  if (isLoading && !data) return <div className="shopping-page"><h1>Loading..</h1></div>;
+  if (error) return <div className="shopping-page">An Error was encoutered</div>;
 
   return (
     <div className="shopping-page">
