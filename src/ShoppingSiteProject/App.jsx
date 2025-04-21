@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { ShoppingCart } from "lucide-react";
+import { Store } from 'lucide-react'
 
 import Home from "./Pages/Home";
 import Shop from "./Pages/Shop";
 import ErrorPage from "./Pages/ErrorPage";
-import ShoppingCart from "./Pages/ShoppingCart";
+import ShoppingCartPage from "./Pages/ShoppingCart";
 
 import "./App.css";
 
@@ -22,7 +23,7 @@ export default function App() {
     <div className="container">
       <nav>
         <div className="logo">
-          <DynamicIcon name="store" size={30} color="#e3e3e3"/>
+          <Store size={30} color="#e3e3e3"/>
         </div>
         <ul>
           <li className={activeLink === "home" ? "active" : ""}>
@@ -37,7 +38,7 @@ export default function App() {
           </li>
           <li className={activeLink === "cart" ? "active" : ""}>
             <NavLink to="/cart" onClick={() => setActiveLink("cart")}>
-              <DynamicIcon name="shopping-cart" /> ({cart.length})
+              <ShoppingCart /> ({cart.length})
             </NavLink>
           </li>
         </ul>
@@ -47,7 +48,7 @@ export default function App() {
         <Route path="/shop" element={<Shop onAddToCart={handleCart} data={data} setData={setData} cart={cart} />} />
         <Route
           path="/cart"
-          element={<ShoppingCart items={cart} setCart={setCart} />}
+          element={<ShoppingCartPage items={cart} setCart={setCart} />}
         />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
