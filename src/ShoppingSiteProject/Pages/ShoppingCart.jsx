@@ -1,7 +1,7 @@
 import CartItem from "../components/CartItem";
 import "../components/styles/cart.css";
 
-function ShoppingCart({ items, setCart }) {
+function ShoppingCartPage({ items, setCart }) {
   if (items.length === 0) return <p>Empty Cart.</p>;
   return (
     <div className="cart">
@@ -13,4 +13,4 @@ function ShoppingCart({ items, setCart }) {
 }
 // TODO: [x] Make a CartItem component that will have a state for count.
 
-export default ShoppingCart;
+export default ShoppingCartPage;
