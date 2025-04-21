@@ -4,6 +4,7 @@
 
 .home-page h1 {
   font-size: 128px;
+  margin-bottom: 30px;
 }
 
 .home-page button {
@@ -20,4 +21,31 @@
   text-decoration: none;
   font-size: 28px;
   text-transform: capitalize;
+}
+
+@media (max-width: 1100px) {
+  .home-page {
+    padding: 50px 100px;
+  }
+  .home-page h1 {
+    font-size: 60px;
+  }
+  .home-page button {
+    padding: 20px 40px;
+  }
+  .home-page button a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page h1 {
+    font-size: 38px;
+  }
+  .home-page button {
+    padding: 5px 15px;
+  }
+  .home-page button a {
+    font-size: 20px;
+  }
 }
