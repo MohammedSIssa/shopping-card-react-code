@@ -1,5 +1,5 @@
 import "./styles/product.css";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { Star } from "lucide-react";
 
 function Product({ data, onAddToCart, cart }) {
   const productName = data.title;
@@ -18,7 +18,7 @@ function Product({ data, onAddToCart, cart }) {
         <h2>{productName.split(" ").splice(0, 3).join(" ")}</h2>
       </div>
       <div className="product-rating">
-        <DynamicIcon name="star" size={20} fill="gold" strokeWidth={0} />{" "}
+        <Star size={20} fill="gold" strokeWidth={0} />{" "}
         {productRating} ({productRatingsCount})
       </div>
       <div className="product-category">{productCategory}</div>
